@@ -80,6 +80,28 @@ A sample script is available in `build/Debug/src.txt` and demonstrates array cre
 
 Example script structure:
 
+1.Hello World
+```lisp
+(program
+	(let stra "hello" )
+	(let strb "world" )
+	(let eq (exp stra strb == ) )
+	(let add (exp stra strb + ) )
+	(if (exp eq 0 == )
+		(write eq )
+	)
+	(write add )
+	(let a 0 )
+	(while  (exp a 10 < )
+		(program
+			(let add (exp add "a" + ) )
+			(let a (exp a 1 + ) )
+		)
+	)
+	(write add )
+)
+```
+2.Array
 ```lisp
 ( program
     ( array_new arr )
@@ -97,7 +119,7 @@ Example script structure:
     )
 )
 ```
-
+More examples in /example/src.txt.
 ## Notes
 
 - The `for` statement is declared but not implemented yet.
