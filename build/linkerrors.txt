@@ -1,0 +1,11 @@
+================================================================================
+Linker Errors
+Generated: 2026-06-19T10:47:55.803Z
+Total Errors: 2
+================================================================================
+
+[LNK2001] (MSVC)
+unresolved external symbol "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > g_sCode" (?g_sCode@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) [C:\Users\Jerry\OneDrive\Desktop\dev\script_engine\build\main.vcxproj]
+
+[LNK1120] (MSVC)
+1 unresolved externals [C:\Users\Jerry\OneDrive\Desktop\dev\script_engine\build\main.vcxproj]
