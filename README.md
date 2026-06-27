@@ -22,7 +22,7 @@ The engine is built with CMake and produces a single executable named `main`.
 
 ## Requirements
 
-- CMake 3.0 or newer
+- CMake 4.0 or newer
 - A C++ compiler compatible with the target platform (MSVC on Windows is used in this workspace)
 
 ## Build
@@ -113,4 +113,4 @@ Example script structure:
 
 ## License
 
-No license is specified in this repository.
+EPL-2.0 License
