@@ -1,6 +1,18 @@
-# Mini-Script
+<h1 style="text-align: center;">Mini-Script</h1>
+<p align="center">
+    <img src="https://img.shields.io/badge/status-experimental-yellow.svg" alt="status" />
+    <img src="https://img.shields.io/badge/language-C%2B%2B-blue.svg" alt="C++" />
+    <img src="https://img.shields.io/badge/CMake-3.0%2B-orange.svg" alt="CMake" />
+    <img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="platform" />
+</p>
 
 A small C++ script engine that parses and executes a Lisp-like script language from a text file.
+
+## Overview
+
+This project implements a simple interpreter in C++ that reads a script file and executes statements such as variable assignment, expressions, conditionals, loops, arrays, and output.
+
+The engine is built with CMake and produces a single executable named `main`.
 
 ## Overview
 
@@ -22,7 +34,7 @@ The engine is built with CMake and produces a single executable named `main`.
 
 ## Requirements
 
-- CMake 4.0 or newer
+- CMake 3.0 or newer
 - A C++ compiler compatible with the target platform (MSVC on Windows is used in this workspace)
 
 ## Build
@@ -41,7 +53,7 @@ Or using the included `build` task in VS Code.
 The executable expects a script file named `src.txt` in the current working directory. The project currently runs `engine.Run("src.txt")` from `src/main.cpp`.
 
 ```powershell
-cd build\Debug
+cd build\\Debug
 main.exe
 ```
 
@@ -80,28 +92,6 @@ A sample script is available in `build/Debug/src.txt` and demonstrates array cre
 
 Example script structure:
 
-1.Hello World
-```lisp
-(program
-	(let stra "hello" )
-	(let strb "world" )
-	(let eq (exp stra strb == ) )
-	(let add (exp stra strb + ) )
-	(if (exp eq 0 == )
-		(write eq )
-	)
-	(write add )
-	(let a 0 )
-	(while  (exp a 10 < )
-		(program
-			(let add (exp add "a" + ) )
-			(let a (exp a 1 + ) )
-		)
-	)
-	(write add )
-)
-```
-2.Array
 ```lisp
 ( program
     ( array_new arr )
@@ -119,7 +109,7 @@ Example script structure:
     )
 )
 ```
-More examples in /example/src.txt.
+
 ## Notes
 
 - The `for` statement is declared but not implemented yet.
@@ -135,4 +125,24 @@ More examples in /example/src.txt.
 
 ## License
 
+No license is specified in this repository.
+## Project Structure
+
+- `CMakeLists.txt` - build definition
+- `src/main.cpp` - entry point
+- `src/script.cpp` - script interpreter implementation
+- `include/script.h` - interpreter declarations
+
+## License
+
 EPL-2.0 License
+
+## Contact
+
+📧:JerryZhu789@outlook.com
+
+
+## Happy Coding! 
+  <p><i>Code is poetry, debug is practice.</i></p>
+  <img src="https://img.shields.io/badge/Status-Happy%20Coding-green?style=for-the-badge&logo=github" alt="Happy Coding Badge" />
+
